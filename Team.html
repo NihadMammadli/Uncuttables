@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Uncuttables: Team Members
+    </title>
+    <link rel = "stylesheet" href = "Assets/Team.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <style>
+            .esas{
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background: url("img/back2.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+        }
+            .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            border: 2px solid black;
+            padding-top: 4%;
+            padding-bottom: 8%;
+            padding-left: 5%;
+            padding-right: 5%;
+            height: auto;
+            color: black;
+            background: url("img/back4.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            font-family: 'Garamond' , serif;
+            font-size: 20px;
+            border-radius: 28px;
+        }
+            .Name{
+            border: 2px solid black;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            text-align: center;
+            color: black;
+            background: url("img/back4.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            border-radius: 14px;
+        }
+            .index{
+            text-align: center;
+            font-size: 24px;
+            padding-left: 500px;
+            padding-right: 500px;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: black;
+            background: url("img/back3.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            border: 3px solid black;
+        }
+        .index img{
+            width: 57px;
+            height: 57px;
+            float: left;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id ="ds">
+            <nav>
+                <ul>
+                     <li><a href ="index.html">Home</a></li>
+                     <li><a href ="HourOfCode.html">Hour of Code</a></li>
+                     <li><a href ="WebsiteAbout.html">About Web</a></li>
+                </ul>
+            </nav>
+                <div class ="butn" onclick="ac()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <script>
+            function ac(){
+                document.getElementById("ds").classList.toggle('active');
+            }
+        </script>
+        </div>
+            <div class ="index">
+                <a href="Index.html" class = "logo"><img src ="img/logo.png"></a>
+                <h1><strong>Team Members</strong></h1>
+            </div>
+            <div class="esas">
+             <div class="wrapper">
+                <h1 class ="tyr">Group Members:</h1>
+                   <br>
+                <div class="i1"><h3>First Member</h3>
+                    <p style="writing-mode: horizontal-tb">
+                       <b>Name:</b>       Nihad <br>
+                        <b>Surname:</b>   Mammadli <br>
+                        <b>Birthdate:</b>  18/08/2003 <br>
+                        <b>Faculty:</b>   BSCS<br>
+                        <b>Year:</b> 1st <br>
+                        <b>Interests:</b> Writing/coding/Watching Football/Tech World<br>
+                        <b>Education:</b> School number 275<br>
+                        <b>Certification:</b> School diploma and Duolingo certificate<br>
+
+                    </div>
+
+
+                    <div class="i2"> <h3 >Third Member</h3>
+                    <p style="writing-mode: horizontal-tb"> 
+                        <b>Name:</b>      Mirvari <br>
+                        <b>Surname:</b>  Mammadli <br>
+                        <b>Birthdate:</b>  01/01/2003 <br>
+                        <b>Faculty:</b>   BSIT<br>
+                        <b>Year:</b> 1st <br>
+                        <b>Interests:</b> Drawing/coding/  Reading/Astrophysics/Tech World<br>
+                        <b>Education:</b> school number 6<br>
+                        <b>Certification:</b> School diploma and IB (International Baccalaureate) diploma <br>
+                        </p>
+                </div>
+                         
+             
+                <div class="i3"> <h3>Second Member</h3>
+                    <p style="writing-mode: horizontal-tb"> 
+                        <b>Name:</b> Sama <br>
+                        <b>Surname:</b>  Valizada <br>
+                        <b>Birthdate:</b>  27/02/2002 <br>
+                        <b>Faculty:</b>   BSCE<br>
+                        <b>Year:</b> 1st <br>
+                        <b>Interests:</b> Astrology/Editing Quotes/Reading detective books<br>
+                        <b>Education:</b> School number 3<br>
+                        <b>Certification:</b> School diploma and EAPP certificate<br>
+                        </p>
+                </div>
+            </div>
+             <br>
+                <div class = "Name"><strong>Images by our Group Member Mirvari Mammadli</strong></div>
+                <div id = "images">
+                    <button class="sol" onclick="c(-1)">&#10094;</button>
+
+                    <button class="sag" onclick="c(1)">&#10095;</button>
+                    
+                    <img class ="drawsr" src ="img/draw2.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw1.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw3.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw4.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw5.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw6.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw7.jpeg">
+                    
+                    <img class ="drawsr" src ="img/draw8.jpeg">
+                </div>
+                <script>
+                var a = 1;
+                b(a);
+                function c(n) { b(a += n); }
+                function b(n) {
+                  var i;
+                  var x = document.getElementsByClassName("drawsr");
+                  if (n > x.length) a = 1
+                  if (n < 1) { a = x.length }
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[a-1].style.display = "block";  
+                }
+                </script>
+    </div>
+    </body>
+</html>

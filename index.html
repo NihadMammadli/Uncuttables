@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Uncuttables: Homepage
+    </title>
+    <link rel = "stylesheet" href = "Assets/Index.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .esas{
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            background: url("img/back4.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            }   
+            .index{
+            text-align: center;
+            font-size: 24px;
+            padding-left: 500px;
+            padding-right: 500px;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: azure;
+            background: url("img/back5.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            border: 3px solid black;
+        }
+        .index img{
+            width: 57px;
+            height: 57px;
+            float: left;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .paraqraf {
+            margin-top: 1.5%;
+            border: 2px solid black;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-bottom: 1%;
+            height: auto;
+            box-sizing: border-box;
+            color: azure;
+            background: url("img/back2.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            font-family: 'Garamond' , serif;
+            font-size: 20px;
+            border-radius: 28px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id ="ds">
+            <nav>
+                <ul>
+                     <li><a href ="HourOfCode.html">Hour Of Code</a></li>
+                     <li><a href ="Team.html">About Team</a></li>
+                     <li><a href ="WebsiteAbout.html">About Web</a></li>
+                </ul>
+            </nav>
+                <div class ="butn" onclick="ac()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                            <script>
+            function ac(){
+                document.getElementById("ds").classList.toggle('active');
+            }
+        </script>
+        </div>
+            <div class ="index">
+                <a href="Index.html" class = "logo"><img src ="img/logo.png"></a>
+                <h1><strong>Homepage</strong></h1>
+            </div>
+        <div class ="esas">
+        <div class = "paraqraf">
+            <h1 class ="tyr"><strong>Introduction to the team:</strong></h1>
+            <br>
+            <img src ="img/logo.png" class ="photos">
+                 <h3><italic> Team name and the logo:</italic></h3>
+                <p>The name of our group is uncuttables. The logo of our group consists of yellow, red, black, and brown, each of which has a different meaning. Black is a symbol of seriousness and red means together with success. Yellow is a symbol of joy, and because it is memorable, the name of the group is written in that color. Red symbolizes competition and warns us that we will have strong competition with other groups. The logo represents the Solar system, with the Sun in the center and the 8 circles between the rings representing the planets revolving around the Sun.</p> 
+            <br>
+                <h3><italic> Our team:</italic></h3>  
+                <p>Our team consists of three members (Nihad Mammadli, Mirvari Mammadli, and Sama Valizada). We all are undergraduate students of the ADA, SITE faculty. ADA is one of the most prestigious universities in Azerbaijan. It has four schools, School of Public and International Affairs (SPIA) , School of Business (SB), School of IT and Engineering (SITE), School of Education (SE). To view more information about each member please view the page 'Team Members'. To view more information about the university please follow this link : <a class = "ling" href ="https://www.ada.edu.az/" target="_blank"> https://www.ada.edu.az/</a></p>
+            </div>
+            <div id="images">           
+                <button class="sol" onclick="c(-1)">&#10094;</button>
+                
+                <button class="sag" onclick="c(1)">&#10095;</button>
+                
+                <img class="photosl" src="img/ada1.jpeg">
+                
+                <img class="photosl" src="img/ada2.jpeg">
+                
+                <img class="photosl" src="img/ada3.jpg">
+                
+                <img class="photosl" src="img/ada4.jpeg">
+
+            </div>
+            <script>
+                var a = 1;
+                b(a);
+                function c(n) { b(a += n); }
+                function b(n) {
+                  var i;
+                  var x = document.getElementsByClassName("photosl");
+                  if (n > x.length) a = 1
+                  if (n < 1) { a = x.length }
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[a-1].style.display = "block";  
+                }
+                </script>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>
